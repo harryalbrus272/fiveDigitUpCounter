@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  width: 90vw;
+  height: 100vh;
+  margin: auto;
+  background-color: #d8f8ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.input-container {
+  padding: 2%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-image: linear-gradient(90deg, #a5f0f1, #e5b0da);
+  text-align: center;
+  color: white;
+}
+
+#input-box {
+  display: flex;
+  justify-content: space-around;
+}
+
+#value-box {
+  width: 30vw;
+}
+
+button {
+  outline: none;
+  border: none;
+  line-height: 1.6rem;
+  padding: 0 2%;
+  border-radius: 0.8rem;
+  font-weight: bolder;
+  box-shadow: 0 3px 20px 1px white;
+}
+
+.display {
+  background-color: #555555;
+  height: 30vh;
+  width: 80vw;
+  margin: 2% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.display-window{
+  width:60px;
+  height:60px;
+  overflow: hidden;
+  position: relative;
+  margin: 1%;
+}
+
+p{
+  min-width: 60px;
+  min-height: 60px;
+  background-color: white;
+  border-top: 3px black solid;
+  text-align: center;
+  line-height: 3.5rem;
+  font-size: 2rem;
+  }
+.previous {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+p.next {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  z-index: 1;
+}
+
+p.animate {
+  top: 0;
+  transition: all ease-in 0.5s;
+}
